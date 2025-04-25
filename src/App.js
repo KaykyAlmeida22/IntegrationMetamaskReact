@@ -32,11 +32,10 @@ function App() {
 
   return (
     <div>
-      From Wallet: <input type="text" value={adress} onChange={(e) => setAdress(e.target.value)} />
+      Wallet: <input type="text" value={adress} onChange={(e) => setAdress(e.target.value)} />
+      <button onClick={getBalanceClick}>Get balance </button>      
       <br />
       To Wallet: <input type="text" value={to} onChange={(e) => setTo(e.target.value)} />
-      <br />
-      <button onClick={getBalanceClick}>Get balance </button>
       <br />
       <button onClick={transferClick}>Transfer </button>
       <br />
