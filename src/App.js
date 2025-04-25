@@ -16,7 +16,7 @@ const [message, setMessage] = useState("");
   }
 
   function transferClick() {
-    transfer("0xc1391c226f904602f98a8beb8390049a1d6eacc4", "", "0.01")
+    transfer("0xc1391c226f904602f98a8beb8390049a1d6eacc4", "0x035c2d2f38758069D1C770F503a750bcfD979Ef8", "0.01")
       // o primeiro parâmetro é o endereço de origem, o segundo é o endereço de destino e o terceiro é a quantidade a ser transferida
       .then(txHash => setMessage(txHash))
       // o método then() é usado para lidar com o resultado da função transfer, que retorna o hash da transação
